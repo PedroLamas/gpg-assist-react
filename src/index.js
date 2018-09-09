@@ -61,6 +61,7 @@ class GpgAssist extends React.Component {
 
   availableCommands = [
     { description: "generate a new key", command: "--generate-key", expertCommand: "--expert --full-generate-key" },
+    { description: "edit a key", command: "--edit-key", expertCommand: "--expert --edit-key", opKey: true },
     { description: "list all keys", command: "--list-keys", opKey: true },
     { description: "list all keys with their fingerprints", command: "--fingerprint", opKey: true },
     { description: "export a public key", command: "--export", opArmor: true, opMinimal: true, opOutput: true, opKey: true },
